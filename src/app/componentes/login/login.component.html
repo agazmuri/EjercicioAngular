@@ -1,0 +1,44 @@
+<div id="divLogin">
+    <form [formGroup]="loginForm">
+      <div class="form-group">
+        <label style="color: white">Cuenta</label>
+        <div>
+          <input
+            formControlName="login"
+            class="form-control"
+            type="email"
+            value=""
+            maxlength="50"
+            minlength="9"
+            placeholder="test@nokia.com"
+            required
+          />
+         
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <label style="color: white">Contraseña</label>
+        <div>
+          <input
+            class="form-control"
+            formControlName = "passWord"
+            id="password"
+            name="password"
+            type="password"
+            required
+          />
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <button
+          type="button"
+          class="btn-secundary-tessi mt-4"
+          (click)="iniciarSesion()"
+          style="margin: 0 auto"
+        >
+          Iniciar sesión
+        </button>
+      </div>
+    </form>
+  </div>
