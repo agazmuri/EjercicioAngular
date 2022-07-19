@@ -8,17 +8,17 @@ export module CuerpoModel {
         message: string;
         creationDate: string;
         status: boolean;
-        imageName: any;
+        imageName: null;
         likeCount: number;
         readCount: number;
         responseCount: number;
-        fileId: any,
-        dtActivityId: any,
-        projectId: any,
-        repairWpId: any,
+        fileId: null,
+        dtActivityId: null,
+        projectId: null,
+        repairWpId: null,
         notifyByUserId: number;
         wpId: number;
-        tagsIds: any;
+        tagsIds: null;
         userInfo: UserInfo[];        
     }
 
@@ -29,6 +29,10 @@ export module CuerpoModel {
         foreColor: string;
         avatarExtension: string;
         coverExtension: string;
+    }
+
+    export interface Imagen{
+        name: string;       
     }
 
 }
