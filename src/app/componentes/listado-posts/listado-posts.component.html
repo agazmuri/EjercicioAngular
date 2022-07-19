@@ -5,9 +5,15 @@
 
 <table border="1">
 
+    <th>ID</th>
+    <th>ID Cuenta</th>    
+    <th>Nombre Imagen</th>
+    <th>Nombre Usuario</th>
     <tr *ngFor="let dato of listadoPosts">
       <td>{{dato.id}}</td>
-      <td>{{dato.message}}</td>
+      <td>{{dato.accountId}}</td>      
+      <td>{{dato.imageName}}</td>
+      <td>{{dato.userInfo.name}}</td>
     </tr>
 
   </table>
