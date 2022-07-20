@@ -29,13 +29,13 @@ export class ListadoPostsComponent implements OnInit {
 
   listado() {              
      
-    this._postsService.getPosts(this.token).subscribe((res) => {
+    this._postsService.getPosts().subscribe((res) => {
             
 
       
          
-          for (let noEnrolados of res.content) {
-            this.listadoPosts.push(noEnrolados);
+          for (let listado of res.content) {
+            this.listadoPosts.push(listado);
           }
 
       // let json = JSON.stringify(res.content);

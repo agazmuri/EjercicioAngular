@@ -16,6 +16,7 @@ export class JwtInterceptorInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
 
+    console.log("start");
     const token: string = this.cookieService.get('token');
 
     let req = request;
@@ -30,7 +31,7 @@ export class JwtInterceptorInterceptor implements HttpInterceptor {
       
     });
 
-    
+    console.log("end", { token, headers, request });
     return next.handle(headers);
 
   }

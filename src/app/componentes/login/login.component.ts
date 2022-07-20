@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
 
   iniciarSesion() {
    
+        console.log(this.loginForm.value);
         
         let auth = {
           'username': this.loginForm.value.login,         
