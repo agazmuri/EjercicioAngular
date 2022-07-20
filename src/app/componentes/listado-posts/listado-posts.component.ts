@@ -7,7 +7,7 @@ import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-listado-posts',
   templateUrl: './listado-posts.component.html',
-  styleUrls: ['./listado-posts.component.css']
+  styleUrls: ['./listado-posts.component.sass']
 })
 
 
