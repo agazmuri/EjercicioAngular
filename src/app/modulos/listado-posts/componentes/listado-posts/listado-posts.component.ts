@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { CuerpoModel } from 'src/app/modelos/cuerpoModel';
 import { ImagenService } from 'src/app/servicios/imagen.service';
 import { PostsService } from 'src/app/servicios/posts.service';
-import { LoginComponent } from '../login/login.component';
+import { LoginComponent } from '../../../login/componentes/login/login.component';
 
 @Component({
   selector: 'app-listado-posts',

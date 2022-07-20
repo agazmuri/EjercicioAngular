@@ -1,7 +1,7 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListadoPostsComponent } from './componentes/listado-posts/listado-posts.component';
-import { LoginComponent } from './componentes/login/login.component';
+import { ListadoPostsComponent } from './modulos/listado-posts/componentes/listado-posts/listado-posts.component';
+import { LoginComponent } from './modulos/login/componentes/login/login.component';
 import { UserGuardGuard } from './user-guard.guard';
 
 
