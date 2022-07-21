@@ -8,10 +8,9 @@ import { JwtInterceptorInterceptor } from './jwt-interceptor.interceptor';
 import { LoginModule } from './modulos/login/login.module';
 import { ListadoPostsModule } from './modulos/listado-posts/listado-posts.module';
 
-
 @NgModule({
   declarations: [
-    AppComponent     
+    AppComponent
   ],
   imports: [
     BrowserModule,
