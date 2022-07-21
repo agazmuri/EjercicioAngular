@@ -32,7 +32,7 @@ export module CuerpoModel {
     }
 
     export interface Imagen{
-        name: string;       
+        url: string;       
     }
 
 }

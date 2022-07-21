@@ -15,8 +15,7 @@ export class ImagenService {
   }
 
   getImagen(fileName : any): Observable <any>{
-   
-		return this.http.get<CuerpoModel.Imagen>(`${this.baseURL}/api/v1/images/dynamic/account?fileName=${fileName}`);
-
+    console.log("RESP: " +  fileName);
+		return this.http.get<CuerpoModel.Imagen>(`${this.baseURL}api/v1/images/dynamic/account?fileName=${fileName}`);
 	}
 }

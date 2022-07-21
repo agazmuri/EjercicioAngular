@@ -18,6 +18,7 @@ export class ListadoPostsComponent implements OnInit {
 
   router: any;
   public listadoPosts: any = [];
+  public listadoImagenes: any = [];
 
   constructor(private _postsService: PostsService, private _imagenService: ImagenService) {
 
@@ -35,14 +36,24 @@ export class ListadoPostsComponent implements OnInit {
 
 
       for (let listado of res.content) {
-        this.listadoPosts.push(listado);
+        if(listado != null){
+          this.listadoPosts.push(listado);
+        }
+        
       }
+      
+      for (let listado of res.content) {              
+        
+        if(listado.imageName != null){
+          this._imagenService.getImagen(listado.imageName).subscribe((res) => {
+            console.log("RESP: " +  res);
+            this.listadoImagenes.push(res);             
+          });
+        }
+        
 
-      // let json = JSON.stringify(res.content);
-      // console.log("DATOS : " +json);
-      // let json2 = JSON.stringify(res.content.imageName);         
-      // console.log("IMAGEN : " +json2);
-
+      }
+          
       // for (let documento of res.content.imageName) {
       //   console.log("IMAGEN : " +documento);
       // }
